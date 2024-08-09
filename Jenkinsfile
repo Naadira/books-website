@@ -5,22 +5,8 @@ pipeline
         {
             steps
             {
-                bat 'make'
+                git url:'https://github.com/Naadira/books-website.git', branch:'main'
             }
         }
-        stage("Test")
-        {
-            steps
-            {
-                bat 'make test'
-            }
-        }
-         stage("Deploy")
-        {
-            steps
-            {
-                bat 'make deploy'
-            }
-        }
-    }
+           }
 }
