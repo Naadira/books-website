@@ -5,21 +5,21 @@ pipeline
         {
             steps
             {
-                sh 'make'
+                bat 'make'
             }
         }
         stage("Test")
         {
             steps
             {
-                sh 'make test'
+                bat 'make test'
             }
         }
          stage("Deploy")
         {
             steps
             {
-                sh 'make deploy'
+                bat 'make deploy'
             }
         }
     }
