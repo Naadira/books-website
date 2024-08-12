@@ -26,7 +26,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying the HTML file...'
-                // Add deployment commands here
+                
             }
         }
     }
